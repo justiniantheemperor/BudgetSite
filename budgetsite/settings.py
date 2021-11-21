@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'budgetsite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '###',
-        'USER' : '###',
-        'PASSWORD' : '###',
+        'NAME': 'budgeting',
+        'USER' : 'postgres',
+        'PASSWORD' : 'buddy999',
         'HOST' : 'localhost',
         'PORT': 5433,
     }
