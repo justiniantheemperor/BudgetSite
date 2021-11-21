@@ -7,3 +7,15 @@ def indexPageView(request) :
 
 def displayPageView(request) :
    return render(request, 'budgetCRUD/display.html')
+
+def createBudgetPageView(request) :
+   return render(request, 'budgetCRUD/create_budget_form.html')
+
+def editBudgetPageView(request) :
+   return render(request, 'budgetCRUD/edit_budget_form.html')
+
+def transactionInfoPageView(request) :
+   return render(request, 'budgetCRUD/transaction_info_form.html')
+
+def userInfoPageView(request) :
+   return render(request, 'budgetCRUD/user_info_form.html')
