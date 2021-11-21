@@ -6,4 +6,4 @@ def indexPageView(request) :
 	return render(request, 'budgetCRUD/index.html')
 
 def displayPageView(request) :
-    return HttpResponse('This is the display page')
+   return render(request, 'budgetCRUD/display.html')

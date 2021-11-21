@@ -3,5 +3,5 @@ from .views import indexPageView, displayPageView
 
 urlpatterns= [ 
 	path("",indexPageView,name="index"),
-    path('display',displayPageView,name="display")
+    path('display/',displayPageView,name="display")
 ]
