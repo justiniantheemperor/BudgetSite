@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def indexPageView(request) : 
-	return HttpResponse('This is the main page')
+	return render(request, 'budgetCRUD/index.html')
 
 def displayPageView(request) :
     return HttpResponse('This is the display page')
