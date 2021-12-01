@@ -2,8 +2,9 @@ from django.db import models
 
 # Create your models here.
 
+# this is a test message
 class user(models.Model):
-    user_id = models.models.CharField(max_length=2), unique = True
+    user_id = models.CharField(max_length=2, unique = True)
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
 
@@ -24,8 +25,7 @@ class transaction(models.Model):
     user_id = models.ForeignKey(user,max_length=30,
                                 verbose_name="User",
                                 on_delete=models.DO_NOTHING, )
-
-    
+ 
 class budget(models.Model):
     budget_number = models.CharField(max_length=30)
     housing_goal = models.CharField(max_length=30)
