@@ -20,4 +20,3 @@ urlpatterns = [
     path('',include('budgetCRUD.urls')),
     path('admin/', admin.site.urls)
 ]
-#Test - Stephen
